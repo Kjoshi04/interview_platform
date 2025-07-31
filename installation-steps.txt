@@ -1,0 +1,11 @@
+> npx create-next-app@latest. /
+    - Typescript → yes for typesafe code
+    - ESLint → yes for clean and maintainable code
+    - Tailwind CSS → yes for sleek responsive design
+    - App Router → yes
+    - Turbopack → yes for optimize development enivronment
+
+> npx shadcn@latest init
+> npm run dev
+> npm install tailwindcss-animate
+> npx shadcn@latest add button form input sonner

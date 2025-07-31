@@ -1,0 +1,96 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250731122556
+Username: LAPTOP-AJ31N6I6\kirtika
+RunAs User: LAPTOP-AJ31N6I6\kirtika
+Configuration Name: 
+Machine: LAPTOP-AJ31N6I6 (Microsoft Windows NT 10.0.26100.0)
+Host Application: powershell.exe -NoExit -ExecutionPolicy Bypass -File C:\Program Files\JetBrains\WebStorm 2025.1.4.1\plugins\terminal\shell-integrations\powershell\powershell-integration.ps1
+Process ID: 14808
+PSVersion: 5.1.26100.4768
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.4768
+BuildVersion: 10.0.26100.4768
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is session-log1.txt
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git add components/AuthForm.tsx
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git commit -m "feat: add toast message for successful sign-up or sign-in and redirect"
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git remote add origin https://github.com/Kjoshi04/interview_platform.git
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git branch
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push -u origin main
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push -u origin main
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push -u origin master
+Password for 'https://Kjoshi04@github.com':
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push -u origin master
+Password for 'https://2004kritikajoshi%40gmail.com@github.com':
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push -u origin master
+Password for 'https://Kjsohi04@github.com':
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push -u origin master
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push -u origin master
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push -u origin master
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push -u origin master
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> ls -a
+>> TerminatingError(Get-ChildItem): "Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System."
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: 
+-Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> ls -a
+>> TerminatingError(Get-ChildItem): "Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System."
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: 
+-Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:4
++ ls -a
++    ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git add .
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push -u origin master
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push -u origin master
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git add .
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push -u origin master
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git ls-files
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git log --oneline --graph --all
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git remote -v
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git status
+

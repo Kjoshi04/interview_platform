@@ -44,10 +44,10 @@ const AuthForm = ({type}:{type:FormType}) => {
         try {
             if(type === "sign-up") {
                 toast.success('Account created successfully. Please sign in.');
-                router.push('/sign-in')
+                router.push('/sign-in');
             }else{
                 toast.success('Sign in successfully');
-                router.push('/')
+                router.push('/');
             }
         }catch(error) {
             console.log(error);
@@ -59,7 +59,7 @@ const AuthForm = ({type}:{type:FormType}) => {
 
     return (
         // min width for large devices
-        <div className="card-border lg:min-w-[566px]">
+        <div className="card-border lg:min-w-[500px]">
             <div className={"flex flex-col gap-6 card py-14 px-10"}>
                 <div className={"flex flex-row gap-2 justify-center"}>
                     <Image src="/logo.svg" alt="Logo" height={32} width={38} />
