@@ -21,3 +21,15 @@ PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_plat
 7b0f1a4 feat: link sign-in and sign-up pages
 f664f3b feat: create sign-in and sign-up form
 86592a4 refractor: create form field as reusable components
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git add .
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git commit -m"feat: set up interview generation ui"
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push master
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push main
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> git push
+
+PS C:\Users\kirtika\Desktop\OneDrive\Folders\Projects\My projects\interview_platform> npm install ai @ai-sdk/google
+
