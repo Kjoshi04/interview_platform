@@ -1,10 +1,11 @@
 'use client';  // agent has to be rendered on the client side
 
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import {useRouter} from "next/navigation";
 import { vapi } from '@/lib/vapi.sdk';
+import {interviewer} from "@/constants";
 
 
 enum CallStatus{
@@ -19,7 +20,7 @@ interface SavedMessage{
     content: string;
 }
 
-const Agent = ({userName, userId, type}: AgentProps) => {
+const Agent = ({userName, userId, type, interviewId, questions}: AgentProps) => {
     const router = useRouter();
     const [isSpeaking, setIsSpeaking] = useState(false);
     const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTVE);
@@ -33,11 +34,11 @@ const Agent = ({userName, userId, type}: AgentProps) => {
 
         const onMessage = ( message: Message) => {
             if(message.type === 'transcript' && message.transcriptType === 'final'){
-                const newMessage ={ role: message.role, content: message.transcript}
+                const newMessage ={ role: message.role, content: message.transcript};
 
                 setMessages((prev) => [...prev, newMessage]);
             }
-        }
+        };
 
         const onSpeechStart = () => setIsSpeaking(true);
         const onSpeechEnd = () => setIsSpeaking(false);
@@ -59,14 +60,37 @@ const Agent = ({userName, userId, type}: AgentProps) => {
             vapi.off('speech-start' , onSpeechStart);
             vapi.off('speech-end' , onSpeechEnd);
             vapi.off('error', onError);
+        };
+
+
+    }, []);
+
+    const handleGenerateFeedback= async ( messages: SavedMessage[]) =>{
+        console.log('Generate feedback here.');
+
+        const{success,id}={
+            success: true,
+            id: 'feedback-id'
         }
 
-
-    }, [])
+        if(success && id){
+            router.push(`/intervew/${interviewId}/feedback`);
+        }else {
+            console.log('Error saving feedback');
+            router.push('/');
+        }
+    }
 
     // if anything changes
     useEffect(() =>{
-        if(callStatus === CallStatus.FINISHED ) router.push('/');
+        if(callStatus === CallStatus.FINISHED ) {
+            if(type ==='generate'){
+                router.push('/')
+            }else{
+                handleGenerateFeedback(messages);
+            }
+        }
+
     },[messages, callStatus, type, userId]);
 
     // const handleCall = async () => {
@@ -95,20 +119,20 @@ const Agent = ({userName, userId, type}: AgentProps) => {
                 }
             )
         }
-        // else {
-        //     let formattedQuestions = "";
-            // if (questions) {
-            //     formattedQuestions = questions
-            //         .map((question) => `- ${question}`)
-            //         .join("\n");
-            // }
-            //
-            // await vapi.start(interviewer, {
-            //     variableValues: {
-            //         questions: formattedQuestions,
-            //     },
-            // });
-    }
+        else {
+            let formattedQuestions = "";
+            if (questions) {
+                formattedQuestions = questions
+                    .map((question) => `- ${question}`)
+                    .join("\n");
+            }
+
+            await vapi.start(interviewer, {
+                variableValues: {
+                    questions: formattedQuestions,
+                },
+            });
+    }}
     const handleDisconnect = async () => {
         setCallStatus(CallStatus.FINISHED);
         vapi.stop();
@@ -162,6 +186,6 @@ const Agent = ({userName, userId, type}: AgentProps) => {
 
         </>
 
-    )
-}
-export default Agent
+    );
+};
+export default Agent;
