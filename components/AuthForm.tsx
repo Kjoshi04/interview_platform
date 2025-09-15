@@ -1,4 +1,4 @@
-"use client" // use this directive to use client side functionalities like button clicks, input, etc.
+"use client"; // use this directive to use client side functionalities like button clicks, input, etc.
 
 import Image from "next/image";
 import Link from "next/link";
