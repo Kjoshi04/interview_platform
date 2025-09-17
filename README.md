@@ -1,15 +1,16 @@
 ### Introduction
 
-Vinterview: A job interview preparation platform powered by Vapi AI Voice agents
+Vinterview: A job interview preparation platform powered by Vapi AI Voice agents  
+
 Built with Next.js for the user interface and backend logic, Firebase for authentication and data storage, styled with TailwindCSS and using Vapi's voice agents, Vinterview is a website project designed to help you learn integrating AI models with your apps. The platform offers a sleek and modern experience for job interview preparation.
 
 ### Tech Stack
--> Next.js
--> Firebase
--> Tailwind CSS
--> Vapi AI
--> shadcn/ui
--> Google Gemeni
+-> Next.js  
+-> Firebase  
+-> Tailwind CSS   
+-> Vapi AI  
+-> shadcn/ui  
+-> Google Gemeni  
 -> Zod
 
 ### Features
@@ -27,21 +28,26 @@ and many more, including code architecture and reusability
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Prerequisites
+*Prerequisites*
 
-Git
-Node.js
+Git  
+Node.js  
 npm (Node Package Manager)
 
-Installation
+&nbsp;
+
+*Installation*
 
 npm install
 
-Set Up Environment Variables
+&nbsp;
+
+*Set Up Environment Variables*
 
 Create a new file named .env.local in the root of your project and add the following content:
 
-NEXT_PUBLIC_VAPI_WEB_TOKEN=
+NEXT_PUBLIC_VAPI_WEB_TOKEN=  
+
 NEXT_PUBLIC_VAPI_WORKFLOW_ID=
 
 GOOGLE_GENERATIVE_AI_API_KEY=
@@ -49,12 +55,16 @@ GOOGLE_GENERATIVE_AI_API_KEY=
 NEXT_PUBLIC_BASE_URL=
 
 FIREBASE_PROJECT_ID=
+
 FIREBASE_CLIENT_EMAIL=
+
 FIREBASE_PRIVATE_KEY=
 
-Running the Project
+&nbsp;
 
-npm run dev
+*Running the Project*
+
+npm run dev  
 Open http://localhost:3000 in your browser to view the project.
 
 ### Live Link
