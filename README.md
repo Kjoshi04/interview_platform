@@ -4,6 +4,12 @@ Vinterview: A job interview preparation platform powered by Vapi AI Voice agents
 
 Built with Next.js for the user interface and backend logic, Firebase for authentication and data storage, styled with TailwindCSS and using Vapi's voice agents, Vinterview is a website project designed to help you learn integrating AI models with your apps. The platform offers a sleek and modern experience for job interview preparation.
 
+### Live Link
+
+The project is deployed on vercel.
+
+Live Link: https://interview-platform-lovat.vercel.app/
+
 ### Tech Stack
 -> Next.js  
 -> Firebase  
@@ -67,8 +73,4 @@ FIREBASE_PRIVATE_KEY=
 npm run dev  
 Open http://localhost:3000 in your browser to view the project.
 
-### Live Link
 
-The project is deployed on vercel.
-
-Live Link: https://interview-platform-lovat.vercel.app/
